@@ -16,10 +16,10 @@ body {
 
 .header__contact {
     min-width: 30%;
-    height: 70px;
+    height: 50px;
     background-color: #000;
-    margin: auto auto auto auto;
-    line-height: 2em;
+    margin: 4% auto 0% auto;
+    line-height: 2.5em;
    
 
     border-style: solid;
@@ -48,12 +48,14 @@ body {
     color: #fff;
     display: flex;
     flex-wrap: wrap;
-    margin: auto auto 8% auto;
+    margin: auto auto auto auto;
     justify-content: center;
     text-align: center;
+ 
 }
 
 .header__logo h1 {
+    font-size: 2em;
     text-transform: uppercase;
     letter-spacing: .2em;
 }
@@ -74,14 +76,20 @@ body {
     font-size: 1.2em;
     font-weight: 800;
     /* box-shadow: 2px 2px 15px 0 #000; */
-    color: #000;
-    background: #7A7A7A;
-    width: 15em;
+    color: rgb(255, 255, 255);
+    background: #000;
+  
+    width: 30%;
     height: 3.5rem;
+    min-width: 9rem;
 
     margin-top: -2em;
     margin-left: auto;
     margin-right: auto;
+
+    border-style: solid;
+    border-color: rgb(250, 250, 250);
+    border-width: 1px;
 }
 
 .main__skills--img {
@@ -90,9 +98,25 @@ body {
     justify-content: space-evenly;
 
     margin-top: -1.5rem;
-    padding-bottom: 70px;
+    padding-bottom: 100px;
     padding-top: 2rem;
-    background: #7A7A7A;
+    background: #000;
+
+    border-style: solid;
+    border-color: rgb(250, 250, 250);
+    border-width: 1px;
+}
+#git:hover{
+    background: #fff;
+}
+
+.div{
+    width: 30%;
+    height: 3.5rem;
+    min-width: 9rem;
+    background: rgb(0, 0, 0);
+    position: absolute;
+    margin-top: 410px;
 }
 
 /* main projects */
@@ -103,22 +127,30 @@ body {
     font-weight: 800;
     /* box-shadow: 2px 2px 15px 0 #000; */
     color: #000;
-    background: rgb(253, 253, 253);
-    width: 15em;
-    height: 2em;
+    background: #0F3532;
+    width: 30%;
+    height: 2rem;
+    min-width: 15px;
 
-    margin-top: -1.5em;
+    margin-top: -1.7em;
     margin-left: auto;
     margin-right: auto;
+    
 }
 
 .main__projects--contents {
+  
+    padding-top:3%;
+    padding-bottom: 4rem;
     display: flex;
     flex-direction: column;
     justify-items: center;
+    background: #0F3532;
+
 }
 
 .main__projects--p1 {
+    
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -129,15 +161,99 @@ body {
 }
 
 .main__projects p {
-    width: 400px;
+    justify-items: center;
+    width: 50%;
+    margin: auto auto auto auto;
+    color: #fff;
+   
+ 
+}
+
+.main__projects img {
+    width: 15rem;
+    padding: 3rem;
     margin-left: auto;
     margin-right: auto;
 }
 
-.main__projects img {
-    width: 20rem;
-    padding: 1rem;
+/* main___ Perfil */
+.main__perfil{
+    height: 1000px;
+}
+
+.main__perfil--title{
+    line-height: 2em;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 800;
+    /* box-shadow: 2px 2px 15px 0 #000; */
+    color: #000;
+    background: #feffff;
+    width: 30%;
+    height: 2rem;
+    min-width: 15px;
+
+    margin-top: -1.6em;
     margin-left: auto;
     margin-right: auto;
 
+}
+.main__perfil--documents{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 4rem;
+ 
+}
+
+.perfil__documents--personal{
+    position: relative;
+    background:rgba(0, 0, 255, 0.155);
+    width: 250px;
+    height: 300px;
+    min-width: 250px;
+    
+}
+
+.perfil__documents--personal img{
+    width: 100%;
+    height: 100%;
+    /* transition: all 500ms ease ease-out; */
+}
+.perfil__documents--personal .txt{
+    position:absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+   
+    background: #03382f8b;
+    color: #fff;
+    /* transition: all 5000ms ease ease-out; */
+    opacity: 0;
+    visibility:hidden;
+    /* text-align: center; */
+    
+}
+
+.perfil__documents--personal:hover > .txt{
+    opacity: 1;
+    visibility: visible;
+  
+    transition: all 5000ms ease ease-out;
+
+}
+
+/* cv */
+.perfil__documents--cv{
+    width: 250px;
+    height: 300px;
+}
+
+.perfil__documents--cv img{
+    width: 100%;
+    height: 100%;
+}
+.perfil__documents--cv:hover{
+    width: 500px;
+    height: 600px;
 }
